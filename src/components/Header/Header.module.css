@@ -1,0 +1,11 @@
+.Header,
+nav.Navigator>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.Navigator>ul {
+    list-style: none;
+    gap: 20px;
+}
