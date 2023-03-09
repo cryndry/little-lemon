@@ -20,7 +20,7 @@ const Specials = () => {
                 <HomepageButton text="Online Menu" />
             </section>
             <section className={s.Exhibition}>
-                {specials.current.map(special => <SpecialCard {...special} />)}
+                {specials.current.map(special => <SpecialCard {...special} key={special.name} />)}
             </section>
         </section>
     );
