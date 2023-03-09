@@ -1,11 +1,26 @@
-.Header,
-nav.Navigator>ul {
+.Header {
+    width: 100%;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 1rem 2rem;
+    border-bottom: 10px solid var(--hero-green);
 }
 
-nav.Navigator>ul {
-    list-style: none;
-    gap: 20px;
+.Header>a {
+    display: flex;
+}
+
+.Logo {
+    width: 200px;
+    height: 60px;
+}
+
+.Link {
+    font-size: smaller;
+    font-weight: 500;
+    color: var(--main-font-color);
+    white-space: nowrap;
+    text-decoration: none;
 }
