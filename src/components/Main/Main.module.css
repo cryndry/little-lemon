@@ -1,3 +1,4 @@
 main.Main {
+    flex-grow: 1;
     padding-top: calc(70px + 2rem);
 }
