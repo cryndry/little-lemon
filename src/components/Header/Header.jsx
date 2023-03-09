@@ -29,8 +29,10 @@ const Header = () => {
 
     return (
         <header className={s.Header} id="header">
-            <a href="/"><img className={s.Logo} src={Logo} alt="" /></a>
-            {navBar}
+            <section className={s.HeaderContent}>
+                <a href="/"><img className={s.Logo} src={Logo} alt="" /></a>
+                {navBar}
+            </section>
         </header>
     );
 };

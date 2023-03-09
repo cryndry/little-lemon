@@ -1,14 +1,23 @@
 .Header {
+    z-index: 1;
     width: 100%;
     position: fixed;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 12px solid var(--hero-green);
+}
+
+.HeaderContent {
+    width: min(1600px, 100vw);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem 2rem;
-    border-bottom: 10px solid var(--hero-green);
+    max-width: 1600px;
 }
 
-.Header>a {
+.HeaderContent>a {
     display: flex;
 }
 

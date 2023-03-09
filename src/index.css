@@ -1,19 +1,35 @@
 @import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;500;800&family=Markazi+Text:wght@400;500&display=swap);
 
+:root {
+  --hero-green: #495e57;
+  --main-font-color: #333333;
+  --little-lemon-yellow: #f4ce14;
+  --card-background: #edefee;
+  --card-price-color: #ee9972;
+}
+
 body {
   font-size: 16pt;
   font-family: 'Karla', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-:root{
-  --hero-green: #495e57;
-  --main-font-color: #333333;
+  color: var(--main-font-color);
 }
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-size: 64pt;
+  font-family: 'Markazi Text', serif;
+}
+
+h2 {
+  font-size: 40pt;
+  font-family: 'Markazi Text', serif;
+}
+
+h3 {
+  font-size: 18pt;
 }
 
 a,

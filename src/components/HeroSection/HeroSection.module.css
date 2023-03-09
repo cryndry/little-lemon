@@ -1,0 +1,57 @@
+.HeroSection {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 4rem 0 2rem 0;
+    background-color: var(--hero-green);
+}
+
+.LittleLemon {
+    width: 90%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Title {
+    font-size: 64pt;
+    line-height: 0.8;
+    color: var(--little-lemon-yellow);
+}
+
+.Location {
+    font-size: 40pt;
+    line-height: 0.8;
+    color: white;
+}
+
+.Description {
+    width: 80%;
+    margin: 1.5rem 0;
+    color: white;
+}
+
+.ImageContainer {
+    position: relative;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+@media (max-width:600px) {
+    .ImageContainer {
+        display: none;
+    }
+}
+
+.HeroImage {
+    width: 300px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.HeroImage>img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 10px;
+}
