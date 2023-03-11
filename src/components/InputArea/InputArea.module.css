@@ -1,0 +1,101 @@
+.InputArea {
+    min-width: 250px;
+}
+
+.InputContainer {
+    cursor: pointer;
+}
+
+.InputContainer[data-error-msg]:not([data-error-msg=""])::after {
+    content: attr(data-error-msg);
+    position: relative;
+    top: 4px;
+    left: 12px;
+    font-size: 20px;
+    color: var(--little-lemon-yellow);
+}
+
+.InputTitle {
+    margin-bottom: 8px;
+}
+
+.InputRow {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    color: var(--hero-green);
+    background-color: var(--card-background);
+}
+
+.InputIcon,
+.Arrow {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.InputRow>input {
+    font-size: 20px;
+    font-family: 'Karla', sans-serif;
+    appearance: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 1;
+    color: inherit;
+    background-color: transparent;
+}
+
+.InputRow>input:focus {
+    border: none;
+    outline: none;
+    appearance: none;
+}
+
+.InputRow>input:-webkit-autofill,
+.InputRow>input:-webkit-autofill:hover,
+.InputRow>input:-webkit-autofill:focus,
+.InputRow>input:-webkit-autofill:active {
+    transition: background-color 50000s ease-in-out 0s, color 0s ease-in-out 0s;
+    -webkit-text-fill-color: white;
+}
+
+.InputRow>input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.InputRow :nth-child(2):not([type="text"]) {
+    text-align: center;
+}
+
+.SelectedOption[data-placeholder]:not([data-placeholder=""]):empty::before {
+    content: attr(data-placeholder);
+    white-space: nowrap;
+    font-size: 20px;
+}
+
+.Options {
+    display: flex;
+    flex-direction: column;
+    color: var(--hero-green);
+    background-color: var(--card-background);
+    height: fit-content;
+    border-radius: 20px;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    padding: 8px;
+    gap: 8px;
+}
+
+.Option {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}

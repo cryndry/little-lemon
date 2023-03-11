@@ -1,5 +1,18 @@
 .BookingForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgba(73, 94, 87, 0.85);
+    color: white;
+}
+
+.FormField {
     display: grid;
-    max-width: 200px;
     gap: 20px;
+}
+
+.BookingForm>button {
+    margin-top: 20px;
 }

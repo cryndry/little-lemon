@@ -1,0 +1,52 @@
+.BookingPage {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    min-height: calc(100vh - 104px);
+    background-size: cover;
+    background-image: url(assets/Restaurant.jpg);
+}
+
+.AboutUs {
+    max-width: 50%;
+    font-size: 18pt;
+    line-height: 140%;
+    height: fit-content;
+    color: white;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgba(73, 94, 87, 0.85);
+}
+
+.FormContainer {
+    flex-grow: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+@media (max-width:1100px) {
+    .BookingPage {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .AboutUs {
+        max-width: 600px;
+    }
+
+    .FormContainer {
+        max-width: 600px;
+    }
+}
+
+@media (max-width:500px) {
+    .AboutUs {
+        display: none;
+    }
+}
+
+@media (max-width:400px) {
+    .BookingPage {
+        padding: 1rem;
+    }
+}

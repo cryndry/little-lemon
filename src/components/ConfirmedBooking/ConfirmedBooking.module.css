@@ -1,0 +1,19 @@
+.ConfirmedBooking {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    min-height: calc(100vh - 104px);
+    background-size: cover;
+    background-image: url(assets/Restaurant.jpg);
+}
+
+.Message {
+    max-width: 60%;
+    font-size: 20pt;
+    line-height: 140%;
+    height: fit-content;
+    color: white;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: rgba(73, 94, 87, 0.85);
+}
